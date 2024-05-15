@@ -48,7 +48,6 @@ footer{
 
 .main{
     grid-area: main;
-    background-color: blue;
 }
 
 .aside{
@@ -160,6 +159,7 @@ input{
 }
 
 .filtro{
+    padding-bottom: 16px;
     border-bottom: 1px solid rgb(137, 137, 137);
 }
 
@@ -191,10 +191,93 @@ input{
     flex-direction: column;
 }
 
+/**Main**/
+.cards{
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-gap: 32px;
+    padding: 40px 30px;
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    height: 470px;
+    background-color: white;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.badge-descuento{
+    padding: 4px 9px;
+    background-color: rgb(182, 7, 7);
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+}
+
+#sin-descuento{
+    visibility: hidden;
+}
+
+.badges-beneficios{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.badge-beneficio{
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.badge-beneficio:first-child{
+    color: green;
+    border: 1px solid green;
+}
+
+.badge-beneficio:nth-child(2){
+    color: rgb(0, 183, 255);
+    border: 1px solid rgb(0,183, 255);
+}
+
+.badge-beneficio:nth-child(3){
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.card img{
+    width: 270px;
+}
+
+.titulo-producto{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cards-precios{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.precio{
+    color: rgb(182, 7, 7);
+    font-weight: 700;
+}
+
+.llegada-producto{
+    font-size: 15px;
+    color: rgb(0, 113, 0);
+}
 /**Footer**/
+
 footer{
     display: flex;
+    height: 60px;
     text-align: center;
     align-items: center;
     justify-content: center;
